@@ -1,0 +1,585 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>House 136 Club — Caring For All</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Inter:wght@300;400;500;600&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav id="navbar">
+    <div class="nav-inner">
+      <a href="#home" class="nav-logo">
+        <img src="images/logo.jpg" alt="House 136 Logo" class="logo-img" />
+      </a>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#activities">Activities</a></li>
+        <li><a href="#impact">Our Work</a></li>
+        <li><a href="#bot">Board of Trustees</a></li>
+        <li><a href="#contact" class="nav-cta">Get Involved</a></li>
+      </ul>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <div class="mobile-menu" id="mobileMenu">
+      <a href="#about">About</a>
+      <a href="#activities">Activities</a>
+      <a href="#impact">Our Work</a>
+      <a href="#bot">Board of Trustees</a>
+      <a href="#contact">Get Involved</a>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section id="home" class="hero">
+    <div class="hero-bg">
+      <div class="hero-ring ring-1"></div>
+      <div class="hero-ring ring-2"></div>
+      <div class="hero-ring ring-3"></div>
+      <div class="particles" id="particles"></div>
+    </div>
+    <div class="hero-content">
+      <p class="hero-eyebrow" data-reveal>Registered Non-Profit · Nigeria · Est. 2013</p>
+      <h1 class="hero-title" data-reveal>
+        <span class="title-house">HOUSE</span>
+        <span class="title-num">136</span>
+      </h1>
+      <p class="hero-tagline" data-reveal>"<em>caring for all</em>"</p>
+      <p class="hero-sub" data-reveal>
+        A brotherhood of changemakers committed to humanitarian service,<br />
+        community redevelopment, and uplifting lives across Nigeria.
+      </p>
+      <div class="hero-actions" data-reveal>
+        <a href="#impact" class="btn-primary">See Our Impact</a>
+        <button type="button" class="btn-ghost" id="donateBtn">Donate</button>
+      </div>
+    </div>
+    <div class="hero-scroll-indicator">
+      <span>Scroll</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- STATS BAND -->
+  <section class="stats-band">
+    <div class="stats-inner">
+      <div class="stat-item">
+        <span class="stat-num" id="yearsOfService" data-count="12">0</span>
+        <span class="stat-label">Years of Service</span>
+      </div>
+      <div class="stat-divider"></div>
+      <div class="stat-item">
+        <span class="stat-num" data-count="2">0</span>
+        <span class="stat-label">Help the Needy Events Per Year</span>
+      </div>
+      <div class="stat-divider"></div>
+      <div class="stat-item">
+        <span class="stat-num" data-count="2000">0</span><span class="stat-plus">+</span>
+        <span class="stat-label">Lives Touched</span>
+      </div>
+      <div class="stat-divider"></div>
+      <div class="stat-item">
+        <span class="stat-num" data-count="6">0</span>
+        <span class="stat-label">Executive Officers</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" class="about section">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-text" data-scroll-reveal>
+          <p class="section-eyebrow">Who We Are</p>
+          <h2 class="section-title">A club built on brotherhood, purpose, and service.</h2>
+          <p>Founded in October 2013, House 136 Club is a registered non-profit organisation operating under the laws of Nigeria. What started as a bond between friends has grown into a structured movement — united by one shared conviction:</p>
+          <blockquote class="about-quote">
+            "To provide humanitarian services, redevelop communities, and enhance the quality of life for our members and the community at large."
+          </blockquote>
+          <p>Twice every year, through our flagship <strong>Help the Needy</strong> events, we mobilise our resources and take direct action — visiting hospitals, supporting sickle cell centers, and distributing financial aid to those who need it most.</p>
+          <p>Our work is not fundraising. It is fellowship in action.</p>
+        </div>
+        <div class="about-visual" data-scroll-reveal>
+          <div class="about-card card-1">
+            <span class="card-icon">🤝</span>
+            <h4>Brotherhood</h4>
+            <p>Members bound by mutual respect, solidarity, and shared values across Nigeria and the diaspora.</p>
+          </div>
+          <div class="about-card card-2">
+            <span class="card-icon">❤️</span>
+            <h4>Help the Needy</h4>
+            <p>Our bi-annual flagship outreach — delivering financial aid, hospital support, and hope to communities.</p>
+          </div>
+          <div class="about-card card-3">
+            <span class="card-icon">🏛️</span>
+            <h4>Non-Profit</h4>
+            <p>Fully registered under Nigerian law. Transparent, accountable, and constitutionally governed.</p>
+          </div>
+          <div class="about-card card-4">
+            <span class="card-icon">🌍</span>
+            <h4>Community</h4>
+            <p>Fostering cultural awareness, inter-tribal unity, and economic development across Nigerian communities.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- MISSION + VISION BAND -->
+  <section class="mission-band">
+    <div class="container">
+      <div class="mission-grid">
+        <div class="mission-item" data-scroll-reveal>
+          <div class="mission-label">Our Mission</div>
+          <p>To promote good community relations — economically, socially, and educationally — while providing humanitarian services that redevelop communities and enhance the quality of life for members and the public.</p>
+        </div>
+        <div class="mission-divider"></div>
+        <div class="mission-item" data-scroll-reveal>
+          <div class="mission-label">Our Vision</div>
+          <p>A Nigeria where no member of our community is left without support. Where brotherhood transcends tribe, and collective action creates lasting change for the less privileged.</p>
+        </div>
+        <div class="mission-divider"></div>
+        <div class="mission-item" data-scroll-reveal>
+          <div class="mission-label">Our Motto</div>
+          <p class="motto-text">"Caring for all."</p>
+          <p>The greeting and response of every member, at every meeting, in every city.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CLUB VALUED ACTIVITIES -->
+  <section id="activities" class="activities section">
+    <div class="container">
+      <div class="section-header" data-scroll-reveal>
+        <p class="section-eyebrow">What We Stand For</p>
+        <h2 class="section-title">Club Valued Activities.</h2>
+        <p class="section-sub">The traditions and commitments that hold House 136 together, year after year.</p>
+      </div>
+
+      <div class="activities-grid">
+        <div class="activity-card" data-scroll-reveal>
+          <span class="activity-number">01</span>
+          <h3>Bi-Annual Help The Needy Program</h3>
+          <p>Our flagship outreach, held twice every year — taking direct financial aid, hospital support, and hope to communities and individuals who need it most.</p>
+        </div>
+        <div class="activity-card" data-scroll-reveal>
+          <span class="activity-number">02</span>
+          <h3>Members' Special Days</h3>
+          <p>Celebrating the milestones that matter — birthdays, achievements, and life's special moments — shared and honoured together as a brotherhood.</p>
+        </div>
+        <div class="activity-card" data-scroll-reveal>
+          <span class="activity-number">03</span>
+          <h3>Members' Monthly Thrift</h3>
+          <p>A disciplined culture of collective saving, building the financial foundation that powers our outreach and supports one another's growth.</p>
+        </div>
+        <div class="activity-card" data-scroll-reveal>
+          <span class="activity-number">04</span>
+          <h3>Annual Family Christmas Party</h3>
+          <p>A yearly celebration that brings members and their families together to close out the year in fellowship, gratitude, and joy.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- IMPACT / OUR WORK -->
+  <section id="impact" class="impact section">
+    <div class="container">
+      <div class="section-header" data-scroll-reveal>
+        <p class="section-eyebrow">Our Work</p>
+        <h2 class="section-title">Where we've shown up.</h2>
+        <p class="section-sub">Every location below is a story of real people helped, real bills paid, and real hope delivered.</p>
+      </div>
+
+      <div class="impact-grid">
+        <!-- Location Card 1 -->
+        <div class="impact-card" data-scroll-reveal>
+         <div class="impact-img-wrap impact-slider" data-slider>
+  <div class="slider-track">
+    <img src="images/impact/location1-1.jpeg" alt="Juvenile Welfare Center photo 1" class="slide active" />
+    <img src="images/impact/location1-2.jpeg" alt="Juvenile Welfare Center photo 2" class="slide" />
+    <img src="images/impact/location1-3.jpeg" alt="Juvenile Welfare Center photo 3" class="slide" />
+    <img src="images/impact/location1-4.jpeg" alt="Juvenile Welfare Center photo 4" class="slide" />
+    <img src="images/impact/location1-5.jpeg" alt="Juvenile Welfare Center photo 5" class="slide" />
+    <img src="images/impact/location1-6.jpeg" alt="Juvenile Welfare Center photo 6" class="slide" />
+  </div>
+  <button class="slider-arrow prev" aria-label="Previous photo">‹</button>
+  <button class="slider-arrow next" aria-label="Next photo">›</button>
+  <div class="slider-dots"></div>
+            <div class="impact-overlay">
+              <span class="impact-tag">Juvenile Welfare Center</span>
+            </div>
+          </div>
+          <div class="impact-info">
+            <h3>Juvenile Welfare Center</h3>
+            <p>We visited the Juvenile Welfare Center and met close to fifty children, many of them abandoned or displaced, with nowhere else to turn. House 136 provided food supplies and financial support, standing with them through a season that has been hard for everyone.</p>
+            <span class="impact-year">2018</span>
+          </div>
+        </div>
+
+        <!-- Location Card 2 -->
+         <div class="impact-card" data-scroll-reveal>
+         <div class="impact-img-wrap impact-slider" data-slider>
+  <div class="slider-track">
+    <img src="images/impact/location2-1.jpeg" alt="Visit To Military Hospital photo 1" class="slide active" />
+    <img src="images/impact/location2-2.jpeg" alt="Visit To Military Hospital photo 2" class="slide" />
+    <img src="images/impact/location2-3.jpeg" alt="Visit To Military Hospital photo 3" class="slide" />
+    <img src="images/impact/location2-4.jpeg" alt="Visit To Military Hospital photo 4" class="slide" />
+    <img src="images/impact/location2-5.jpeg" alt="Visit To Military Hospital photo 5" class="slide" />
+  </div>
+  <button class="slider-arrow prev" aria-label="Previous photo">‹</button>
+  <button class="slider-arrow next" aria-label="Next photo">›</button>
+  <div class="slider-dots"></div>
+            <div class="impact-overlay">
+              <span class="impact-tag">Hospital Outreach</span>
+            </div>
+          </div>
+          <div class="impact-info">
+            <h3>Military Hospital Yaba</h3>
+            <p>At Military Hospital Yaba, our mission was simple: touch as many lives as possible. We encountered patients facing circumstances no one deserves, offering words of encouragement alongside direct financial support — for some, that meant settling their hospital bills in full.</p>
+            <span class="impact-year">2022</span>
+          </div>
+        </div>
+
+        <!-- Location Card 3 -->
+         <div class="impact-card" data-scroll-reveal>
+         <div class="impact-img-wrap impact-slider" data-slider>
+  <div class="slider-track">
+    <img src="images/impact/location3-1.jpeg" alt="Visit To Sickle Cell Center photo 1" class="slide active" />
+    <img src="images/impact/location3-2.jpeg" alt="Visit To Sickle Cell Center photo 2" class="slide" />
+    <img src="images/impact/location3-3.jpeg" alt="Visit To Sickle Cell Center photo 3" class="slide" />
+    <img src="images/impact/location3-4.jpeg" alt="Visit To Sickle Cell Center photo 4" class="slide" />
+    <img src="images/impact/location3-5.jpeg" alt="Visit To Sickle Cell Center photo 5" class="slide" />
+    <img src="images/impact/location3-6.jpeg" alt="Visit To Sickle Cell Center photo 6" class="slide" />
+    <img src="images/impact/location3-7.jpeg" alt="Visit To Sickle Cell Center photo 7" class="slide" />
+  </div>
+  <button class="slider-arrow prev" aria-label="Previous photo">‹</button>
+  <button class="slider-arrow next" aria-label="Next photo">›</button>
+  <div class="slider-dots"></div>
+            <div class="impact-overlay">
+              <span class="impact-tag">Sickle Cell Center</span>
+            </div>
+          </div>
+          <div class="impact-info">
+            <h3>Sickle Cell Foundation Nigeria</h3>
+            <p>Our visit to the Sickle Cell Foundation Nigeria carried one purpose: to reach as many lives as we could. We met individuals facing battles far beyond what anyone should bear, and we responded with words of genuine encouragement and meaningful financial assistance.</p>
+            <span class="impact-year">2025</span>
+          </div>
+        </div>
+
+        <!-- Location Card 4 -->
+        <div class="impact-card" data-scroll-reveal>
+          <div class="impact-img-wrap">
+            <div class="impact-img-placeholder">
+              <span class="placeholder-icon">🏥</span>
+              <span class="placeholder-text">Photos Coming Soon</span>
+            </div>
+            <div class="impact-overlay">
+              <span class="impact-tag">Hospital Outreach</span>
+            </div>
+          </div>
+          <div class="impact-info">
+            <h3>Location Name Here</h3>
+            <p>Replace with actual location details. Every card here becomes a permanent record of House 136's generosity.</p>
+            <span class="impact-year">Year</span>
+          </div>
+        </div>
+
+        <!-- Location Card 5 -->
+        <div class="impact-card" data-scroll-reveal>
+          <div class="impact-img-wrap">
+            <div class="impact-img-placeholder">
+              <span class="placeholder-icon">🤲</span>
+              <span class="placeholder-text">Photos Coming Soon</span>
+            </div>
+            <div class="impact-overlay">
+              <span class="impact-tag">Financial Aid</span>
+            </div>
+          </div>
+          <div class="impact-info">
+            <h3>Location Name Here</h3>
+            <p>Replace with actual event details. This card format supports photos, captions, and location names.</p>
+            <span class="impact-year">Year</span>
+          </div>
+        </div>
+
+        <!-- Location Card 6 -->
+        <div class="impact-card" data-scroll-reveal>
+          <div class="impact-img-wrap">
+            <div class="impact-img-placeholder">
+              <span class="placeholder-icon">🌟</span>
+              <span class="placeholder-text">Photos Coming Soon</span>
+            </div>
+            <div class="impact-overlay">
+              <span class="impact-tag">Community Outreach</span>
+            </div>
+          </div>
+          <div class="impact-info">
+            <h3>Location Name Here</h3>
+            <p>Replace with actual location name and details. More cards can be added as needed.</p>
+            <span class="impact-year">Year</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- QUOTE BREAK -->
+  <section class="quote-break">
+    <div class="container">
+      <blockquote data-scroll-reveal>
+        <span class="quote-mark">"</span>
+        Express love, brotherhood, and collective economic survival of all members through initiatives provided by members themselves.
+        <span class="quote-source">— House 136 Club Constitution, Article IV</span>
+      </blockquote>
+    </div>
+  </section>
+
+  <!-- BOARD OF TRUSTEES -->
+  <section id="bot" class="bot section">
+    <div class="container">
+      <div class="section-header" data-scroll-reveal>
+        <p class="section-eyebrow">The People Behind the Purpose</p>
+        <h2 class="section-title">Board of Trustees</h2>
+        <p class="section-sub">The executive officers who lead, govern, and represent House 136 Club Nigeria.</p>
+      </div>
+
+      <div class="bot-grid">
+        <!-- BOT Member 1 -->
+        <div class="bot-card" data-scroll-reveal>
+          <div class="bot-img-wrap">
+            <div class="bot-img-placeholder">
+              <span class="bot-initials">??</span>
+            </div>
+          </div>
+          <div class="bot-info">
+            <h3 class="bot-name">Oniti Akintunde Pelumi</h3>
+            <span class="bot-role">BOT</span>
+            <a href="mailto:email@example.com" class="bot-email">akinoniti@gmail.com</a>
+          </div>
+        </div>
+
+        <!-- BOT Member 2 -->
+        <div class="bot-card" data-scroll-reveal>
+          <div class="bot-img-wrap">
+            <div class="bot-img-placeholder">
+              <span class="bot-initials">??</span>
+            </div>
+          </div>
+          <div class="bot-info">
+            <h3 class="bot-name">Chukwuka Chukwuma</h3>
+            <span class="bot-role">BOT</span>
+            <a href="mailto:email@example.com" class="bot-email">chukwumacc@gmail.com</a>
+          </div>
+        </div>
+
+        <!-- BOT Member 3 -->
+        <div class="bot-card" data-scroll-reveal>
+          <div class="bot-img-wrap">
+            <div class="bot-img-placeholder">
+              <span class="bot-initials">??</span>
+            </div>
+          </div>
+          <div class="bot-info">
+            <h3 class="bot-name">Dada Adeniyi Olushola</h3>
+            <span class="bot-role">BOT</span>
+            <a href="mailto:email@example.com" class="bot-email">showaxbventures2@yahoo.com</a>
+          </div>
+        </div>
+
+        <!-- BOT Member 4 -->
+        <div class="bot-card" data-scroll-reveal>
+          <div class="bot-img-wrap">
+            <div class="bot-img-placeholder">
+              <span class="bot-initials">??</span>
+            </div>
+          </div>
+          <div class="bot-info">
+            <h3 class="bot-name">Olayemi John Olajuyi</h3>
+            <span class="bot-role">BOT</span>
+            <a href="mailto:email@example.com" class="bot-email">olayemi.olajuyi01@gmail.com</a>
+          </div>
+        </div>
+
+        <!-- BOT Member 5 -->
+        <div class="bot-card" data-scroll-reveal>
+          <div class="bot-img-wrap">
+            <div class="bot-img-placeholder">
+              <span class="bot-initials">??</span>
+            </div>
+          </div>
+          <div class="bot-info">
+            <h3 class="bot-name">Name Here</h3>
+            <span class="bot-role">Social Director</span>
+            <a href="mailto:email@example.com" class="bot-email">email@example.com</a>
+          </div>
+        </div>
+
+        <!-- BOT Member 6 -->
+        <div class="bot-card" data-scroll-reveal>
+          <div class="bot-img-wrap">
+            <div class="bot-img-placeholder">
+              <span class="bot-initials">??</span>
+            </div>
+          </div>
+          <div class="bot-info">
+            <h3 class="bot-name">Name Here</h3>
+            <span class="bot-role">Chief Whip</span>
+            <a href="mailto:email@example.com" class="bot-email">email@example.com</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- DONATE BANNER -->
+  <section class="donate-banner">
+    <div class="container donate-banner-inner">
+      <div class="donate-banner-text">
+        <p class="section-eyebrow">Still Scrolling?</p>
+        <h2 class="donate-banner-title">Your support keeps "Help the Needy" alive.</h2>
+        <p>Every donation goes straight into hospital bills, supplies, and aid for families who need it most.</p>
+      </div>
+      <button type="button" class="btn-primary donate-banner-btn" id="donateBtnMid">Donate Now</button>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="contact section">
+    <div class="container">
+      <div class="contact-grid">
+        <div class="contact-left" data-scroll-reveal>
+          <p class="section-eyebrow">Get Involved</p>
+          <h2 class="section-title">Reach out.<br/>Make a difference.</h2>
+          <p>Whether you want to donate, ask a question, or join the movement — we'd love to hear from you. House 136 Club is always looking for people who share our passion for community and service.</p>
+          <div class="contact-details">
+            <div class="contact-item">
+              <span class="contact-icon">📧</span>
+              <div>
+                <span class="contact-label">Email Us</span>
+                <a href="mailto:official@house136.org" class="contact-val">official@house136.org</a>
+              </div>
+            </div>
+            <div class="contact-item">
+              <span class="contact-icon">💬</span>
+              <div>
+                <span class="contact-label">WhatsApp Us</span>
+                <a href="#" class="contact-val" id="whatsappLink">Number coming soon</a>
+              </div>
+            </div>
+            <div class="contact-item">
+              <span class="contact-icon">📍</span>
+              <div>
+                <span class="contact-label">Based In</span>
+                <span class="contact-val">Nigeria</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="contact-right" data-scroll-reveal>
+          <form class="contact-form" id="contactForm">
+            <div class="form-group">
+              <label for="name">Full Name</label>
+              <input type="text" id="name" name="name" placeholder="Your name" required />
+            </div>
+            <div class="form-group">
+              <label for="email">Email Address</label>
+              <input type="email" id="email" name="email" placeholder="your@email.com" required />
+            </div>
+            <div class="form-group">
+              <label for="reason">I want to...</label>
+              <select id="reason" name="reason">
+                <option value="">Select a reason</option>
+                <option value="donate">Make a Donation</option>
+                <option value="question">Ask a Question</option>
+                <option value="partner">Partner With Us</option>
+                <option value="media">Media Enquiry</option>
+                <option value="other">Other</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" placeholder="Tell us how you'd like to get involved..." rows="5" required></textarea>
+            </div>
+            <button type="submit" class="btn-primary full-width" id="sendMessageBtn">Send Message via WhatsApp</button>
+            <p class="form-note" id="formNote">We typically respond within 48 hours.</p>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-inner">
+        <div class="footer-brand">
+          <img src="images/logo.jpg" alt="House 136" class="footer-logo" />
+          <p class="footer-tagline">"Caring for all" — since 2013</p>
+          <p class="footer-legal">House 136 Club Nigeria · Registered Non-Profit Organisation under the laws of the Federal Republic of Nigeria.</p>
+        </div>
+        <div class="footer-links">
+          <h4>Quick Links</h4>
+          <a href="#about">About Us</a>
+          <a href="#impact">Our Work</a>
+          <a href="#bot">Board of Trustees</a>
+          <a href="#contact">Contact</a>
+        </div>
+        <div class="footer-contact">
+          <h4>Contact</h4>
+          <p>📧 official@house136.org</p>
+          <p>📞 +234 000 000 0000</p>
+          <p>📍 Nigeria</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2025 House 136 Club Nigeria. All rights reserved.</p>
+        <p class="footer-credit">Built with ❤️ for a cause that matters.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- DONATE MODAL -->
+  <div class="modal-overlay" id="donateModal">
+    <div class="modal-box">
+      <button class="modal-close" id="donateModalClose" aria-label="Close">&times;</button>
+      <p class="section-eyebrow">Support The Cause</p>
+      <h3 class="modal-title">Make a Donation</h3>
+      <p class="modal-text">Every donation goes directly into our "Help the Needy" outreach — hospital bills, supplies, and financial aid for those who need it most.</p>
+      <div class="donate-details">
+        <div class="donate-row">
+          <span class="donate-label">Bank</span>
+          <span class="donate-val">Sterling Bank</span>
+        </div>
+        <div class="donate-row">
+          <span class="donate-label">Account Name</span>
+          <span class="donate-val">House 136 Club</span>
+        </div>
+        <div class="donate-row">
+          <span class="donate-label">Account Number</span>
+          <span class="donate-val donate-acct" id="acctNumber">0092576873</span>
+          <button class="copy-btn" id="copyAcctBtn" type="button">Copy</button>
+        </div>
+      </div>
+      <p class="modal-note">Thank you for caring for all with us. 🤍</p>
+    </div>
+  </div>
+
+  <!-- IMAGE LIGHTBOX -->
+  <div class="lightbox-overlay" id="lightbox">
+    <button class="lightbox-close" id="lightboxClose" aria-label="Close">&times;</button>
+    <button class="lightbox-arrow lightbox-prev" id="lightboxPrev" aria-label="Previous">‹</button>
+    <img src="" alt="" class="lightbox-img" id="lightboxImg" />
+    <button class="lightbox-arrow lightbox-next" id="lightboxNext" aria-label="Next">›</button>
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

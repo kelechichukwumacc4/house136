@@ -275,24 +275,10 @@ if (copyAcctBtn) {
 }
 
 // =============================================
-// WHATSAPP NUMBER CONFIG
-// Replace WHATSAPP_NUMBER with the real number once you have it.
-// Format: country code + number, no +, no spaces. e.g. "2348012345678"
+// CONTACT FORM — sends via email (mailto)
 // =============================================
-const WHATSAPP_NUMBER = ''; // <-- put the number here when available, e.g. '2348012345678'
+const CLUB_EMAIL = 'houseone3six@gmail.com';
 
-const whatsappLink = document.getElementById('whatsappLink');
-if (whatsappLink) {
-  if (WHATSAPP_NUMBER) {
-    whatsappLink.href = `https://wa.me/${WHATSAPP_NUMBER}`;
-    whatsappLink.textContent = `+${WHATSAPP_NUMBER}`;
-    whatsappLink.target = '_blank';
-  } else {
-    whatsappLink.addEventListener('click', (e) => e.preventDefault());
-  }
-}
-
-// Override the contact form to send via WhatsApp instead of a dead submit
 const sendMessageBtn = document.getElementById('sendMessageBtn');
 if (form && sendMessageBtn) {
   // Remove the old "Message Sent" handler behavior by re-binding submit
@@ -306,16 +292,20 @@ if (form && sendMessageBtn) {
     const reason = newForm.querySelector('#reason').value;
     const message = newForm.querySelector('#message').value;
 
-    const text = `Hello House 136,%0A%0AName: ${encodeURIComponent(name)}%0AEmail: ${encodeURIComponent(email)}%0AReason: ${encodeURIComponent(reason || 'General')}%0A%0AMessage: ${encodeURIComponent(message)}`;
+    const subject = `House 136 Website Enquiry — ${reason || 'General'}`;
+    const body =
+      `Name: ${name}\n` +
+      `Email: ${email}\n` +
+      `Reason: ${reason || 'General'}\n\n` +
+      `Message:\n${message}`;
 
-    if (WHATSAPP_NUMBER) {
-      window.open(`https://wa.me/${WHATSAPP_NUMBER}?text=${text}`, '_blank');
-    } else {
-      const note = document.getElementById('formNote');
-      if (note) {
-        note.textContent = 'WhatsApp number not added yet — check back soon!';
-        note.style.color = '#D4700A';
-      }
+    const mailtoUrl = `mailto:${CLUB_EMAIL}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+    window.location.href = mailtoUrl;
+
+    const note = document.getElementById('formNote');
+    if (note) {
+      note.textContent = 'Opening your email app to send this message...';
+      note.style.color = '#C8960C';
     }
   });
 }

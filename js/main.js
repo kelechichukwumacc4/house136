@@ -92,9 +92,9 @@ staggerChildren('.bot-grid', '.bot-card', 90);
 staggerChildren('.about-visual', '.about-card', 80);
 staggerChildren('.activities-grid', '.activity-card', 90);
 
-// ---- AUTO-CALCULATE YEARS OF SERVICE (founded October 2013) ----
+// ---- AUTO-CALCULATE YEARS OF SERVICE (founded October 2018) ----
 function calculateYearsOfService() {
-  const founded = new Date(2013, 9, 1); // October is month index 9
+  const founded = new Date(2018, 9, 1); // October is month index 9
   const now = new Date();
   let years = now.getFullYear() - founded.getFullYear();
   // If we haven't reached October yet this year, don't count the current year
